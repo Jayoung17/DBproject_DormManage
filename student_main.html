@@ -15,26 +15,56 @@
         background-color: #F4E9E6;
         padding: 100px;
     }
+    
+    #things{
+        background-color: #F4E9E6;
+        padding: 100px;
+    }
+    
+    #points{
+        /*background-color: #F4E9E6;*/
+        padding: 100px;
+    }
+
+    #overnight{
+        background-color: #F4E9E6;
+        padding: 100px;
+    }
+
+    #leaving{
+        /*background-color: #F4E9E6;*/
+        padding: 100px;
+    }
+
+    #bottom{
+        background-color: #F4E9E6;
+        padding: 10px;
+    }
+
     #Menu{
         height: 30px;
-        width: auto;
 
+        margin-top: 30px;
     }
+    
     ul{
-        text-align:center;
+        margin-top: 0px;
+        text-align: center;
     }
+
     li{
         list-style: none;
         display: inline-block;
         line-height: 30px;
     }
+
     .menu{
         text-decoration: none;
         color: black;
         display: inline-block;
         width: 150px;
-        
     }
+
     .menu:hover{
         background-color: #F4E9E6;
     }
@@ -92,10 +122,25 @@
 
     <div id="overnight">
         <h1>외박신청서</h1>
+        <form action="">
+            <a>외박사유</a> <textarea rows="5" cols="50"></textarea> <br/>
+            <a>외박기간</a> <input type="date"/> ~ <input type="date"/> <br/>
+            <input type="submit" value="신청"/>
+        </form>
     </div>
 
     <div id="leaving">
         <h1>퇴거신청서</h1>
+        <form action="">
+            <a>퇴거사유</a> <textarea rows="5" cols="50"></textarea> <br/>
+            <a>퇴거날짜</a> <input type="date"/> <br/>
+            <input type="submit" value="신청"/>
+        </form>
+    </div>
+
+    <div id="bottom">
+        <a>기숙사 관리 홈페이지</a>
+
     </div>
 </body>
 </html>
