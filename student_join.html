@@ -100,15 +100,15 @@
     </select> <br/><br/>
 
     <input type="button" value="신청" onclick="chk()"/>
-    <input type="button" value="취소" onclick="location.href='join.html'"/>
+    <input type="button" value="취소" onclick="location.href='main.html'"/>
     </form>
     <script>
         function chk(){
-            if(document.student_join.id.value==""){
+            if(student_join.id.value==""){
                 alert("학번(ID)를 입력해주세요.");
-                document.student_join.id.focus();
+                student_join.id.focus();
             }
-            else if(document.student_join.pw.value==""){
+            else if(student_join.pw.value==""){
                 alert("비밀번호(PW)를 입력해주세요.");
                 student_join.pw.focus();
             }
