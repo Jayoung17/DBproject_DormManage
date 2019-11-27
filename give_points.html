@@ -10,14 +10,19 @@
         display: none;
     }
     </style>
+    <script type="text/javascript" src="./jquery.js"></script>
     <script>
-    jQuery('#good_or_bad').change(function() {
-        var state = jQuery('#good_or_bad option:selected').val();
+    $(function(){
+        $('#good_or_bad').change(function() {
+        var state = $('#good_or_bad option:selected').val();
+        console.log(state);
+        console.log("무엇");
         if ( state == 'good' ) {
-            jQuery('.good_reason').show();
+            $('.good_reason').show();
         } else {
-            jQuery('.bad_reason').show();
+            $('.bad_reason').show();
         }
+    });
     });
     </script>
 </head>
