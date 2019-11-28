@@ -30,7 +30,7 @@
 </head>
 <body>
     <h1>입주신청서</h1>
-    <form name="student_join" action="">
+    <form name="student_join" method="post" action="student.php">
     <a>학번(ID)</a> <input type="text" name="id"/><br/>
     <a>비밀번호(PW)</a> <input name="pw" type="password"/><br/>
     <a>이름</a> <input name="name" type="text"/><br/>
@@ -146,6 +146,7 @@
             }
             else{
                 alert("입주신청이 완료되었습니다.");
+                document.student_join.submit();
                 location.href="main.html";
         }}
     </script>
