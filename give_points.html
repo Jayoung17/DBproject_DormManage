@@ -31,6 +31,7 @@
     </script>
 </head>
 <body>
+    <h1 style="text-align: center;">상벌점 부여</h1>
     <form name="give_points" action="">
         <a>학번</a> <input name="st_id" id="student_num" type="text"/> <br/>
         <a>상점/벌점</a>
@@ -74,10 +75,10 @@
         else{
             if(confirm(document.getElementById("student_num").value+"에 부여하시겠습니까?")==true){
             document.give_points.submit();
-        } else{
-            return;
+            } else{
+                return;
+            }
         }
-    }
     }
     </script>
 </body>
