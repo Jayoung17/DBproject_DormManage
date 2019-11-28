@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회원가입 - 학생</title>
+    <style>
+    .score_input{
+        display: none;
+    }
+    </style>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script>
+    $(function(){
+        $('#grade').change(function() {
+        var state = $('#grade option:selected').val();
+        if ( state == '' ) {
+            $('.score_input').hide();
+        }
+        else if ( state == 'first_grade' ) {
+            $('.score_input').hide();
+        } else {
+            $('.score_input').show();
+            $('.score_input').css("display", "inline");
+        }
+    });
+    });
+    </script>
+</head>
+<body>
+    <h1>입주신청서</h1>
+    <form name="student_join" method="post" action="student.php">
+    <a>학번(ID)</a> <input type="text" name="id"/><br/>
+    <a>비밀번호(PW)</a> <input name="pw" type="password"/><br/>
+    <a>이름</a> <input name="name" type="text"/><br/>
+    <a>학과</a> <input name="major" type="text"/><br/>
+    <a>학년</a>
+    <select id="grade" name="grade">
+        <option value="" selected="selected">선택</option>
+        <option value="first_grade">1</option>
+        <option value="second_grade">2</option>
+        <option value="third_grade">3</option>
+        <option value="fourth_grade">4</option>
+    </select>
+    <div class="score_input">
+        <a>* 직전학기 성적 (숫자로 반드시 입력)</a> <input name="score" type="text"/>
+    </div><br/>
+    <a>성별</a> 
+    <select name="gender">
+        <option value="" selected>선택</option>
+        <option>남</option>
+        <option>여</option>        
+    </select>
+    <br/>
+    <a>주소</a>
+    <select name="address">
+        <option value="" selected>선택</option>
+        <option>서울특별시</option>
+        <option>부산광역시</option>
+        <option>대구광역시</option>
+        <option>인천광역시</option>
+        <option>광주광역시</option>
+        <option>대전광역시</option>
+        <option>울산광역시</option>
+        <option>경기도</option>
+        <option>강원도</option>
+        <option>충청북도</option>
+        <option>충청남도</option>
+        <option>전라북도</option>
+        <option>전라남도</option>
+        <option>경상북도</option>
+        <option>경상남도</option>
+        <option>제주특별자치도</option>
+        <option>세종특별자치시</option>
+    </select> <br/>
+    <a>전화번호(숫자만 입력, 예: 01012341234)</a><br/>
+    <input name="phone_number" type="text"/><br/>
+    <br/>
+    <a>희망하는 기숙사</a> 
+    <select name="dorm">
+        <option value="" selected>선택</option>
+        <option>기숙사1</option>
+        <option>기숙사2</option>
+        <option>기숙사3</option>
+    </select> <br/>
+    <a>희망하는 층</a>
+    <select name="floor">
+        <option value="" selected>선택</option>
+        <option>1층</option>
+        <option>2층</option>
+        <option>3층</option>
+        <option>4층</option>
+        <option>5층</option>
+        <option>6층</option>
+        <option>7층</option>
+        <option>8층</option>
+        <option>9층</option>
+        <option>10층</option>
+    </select> <br/><br/>
+
+    <input type="button" value="신청" onclick="chk()"/>
+    <input type="button" value="취소" onclick="location.href='main.html'"/>
+    </form>
+    <script>
+        function chk(){
+            if(student_join.id.value==""){
+                alert("학번(ID)를 입력해주세요.");
+                student_join.id.focus();
+            }
+            else if(student_join.pw.value==""){
+                alert("비밀번호(PW)를 입력해주세요.");
+                student_join.pw.focus();
+            }
+            else if(student_join.name.value==""){
+                alert("이름을 입력해주세요.");
+                student_join.name.focus();
+            }
+            else if(student_join.major.value==""){
+                alert("학과를 입력해주세요.");
+                student_join.major.focus();
+            }
+            else if(student_join.grade.value==""){
+                alert("학년을 선택해주세요.");
+                student_join.grade.focus();
+            }
+            else if(student_join.gender.value==""){
+                alert("성별을 선택해주세요.");
+                student_join.gender.focus();
+            }
+            else if(student_join.address.value==""){
+                alert("주소를 선택해주세요.");
+                student_join.address.focus();
+            }
+            else if(student_join.phone_number.value==""){
+                alert("전화번호를 입력해주세요.");
+                student_join.phone_number.focus();
+            }
+            else if(student_join.dorm.value==""){
+                alert("희망하는 기숙사를 선택해주세요.");
+                student_join.dorm.focus();
+            }
+            else if(student_join.floor.value==""){
+                alert("희망하는 층을 선택해주세요.");
+                student_join.floor.focus();
+            }
+            else{
+                alert("입주신청이 완료되었습니다.");
+                document.student_join.submit();
+                location.href="main.html";
+        }}
+    </script>
+</body>
+</html>

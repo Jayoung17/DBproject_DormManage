@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>입주자 조회</title>
+
+    <script>
+        function st_info_popup(){
+            window.open("student_info.html", "입주자정보", "width=800, height=800, left=100, top=50");
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">입주자 목록</h1>
+    <select>
+        <option selected>선택</option>
+        <option>기숙사</option>
+        <option>학번</option>
+        <option>이름</option>
+    </select>
+    <select>
+        <option selected>선택</option>
+        <option>남자</option>
+        <option>여자</option>
+    </select>
+    <input type="text"/>
+    <input type="submit" value="검색"/> <br/><br/>
+    <a>정렬 기준</a>
+    <select>
+        <option selected>선택</option>
+        <option>벌점 높은 순</option>
+        <option>최근 출입시간 순</option>
+    </select>
+    <input type="submit" value="정렬"/>
+    <br/><br/>
+    <table border="1" cellspacing="0" style="margin: auto;">
+        <tr>
+            <th>No</th>
+            <th>기숙사</th>
+            <th>성별</th>
+            <th>학번</th>
+            <th>이름</th>
+            <th>호실</th>
+            <th>상벌점</th>
+            <th>최근 출입시간</th>
+            <th>/</th>
+        </tr>
+        <tr>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th><a onclick='st_info_popup();'>정보보기</a></th>
+        </tr>
+    </table>
+</body>
+</html>

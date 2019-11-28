@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>입주 대기 상태</title>
+</head>
+<body>
+    <h1>OOO님, 안녕하세요.</h1>
+    <a>입주 대기 상태입니다.</a><br/>
+    <a href="" onclick="chk()">입주취소</a>
+    <script>
+        function chk(){
+            if(confirm("정말 입주신청을 취소하시겠습니까?")==true){
+                /*입주신청서 삭제하는거 생각하기*/
+                document.give_points.submit();
+            } else{
+                return;
+            }
+        }
+    </script>
+</body>
+</html>

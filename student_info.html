@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>학생 정보</title>
+    <style>
+    #points_list{
+        text-align: center;
+    }
+    
+    #time_list{
+        text-align: center;
+    }
+    </style>
+
+</head>
+<body>
+    <h1 style="text-align: center;">학생 정보</h1>
+    <p style="text-align: center"><a onclick="chk()">삭제</a></p>
+    <script>
+        function chk(){
+            if(confirm("해당 학생 정보를 정말 삭제하시겠습니까?")==true){
+                /*삭제하기document.submit();*/
+                alert("삭제가 완료되었습니다.");
+            } else{
+                return;
+            }
+        }
+    </script>
+    <table border="1" cellspacing="0" style="margin: auto;">
+        <tr>
+            <th>기숙사</th>
+            <th>성별</th>
+            <th>학번</th>
+            <th>이름</th>
+            <th>호실</th>
+            <th>직전학기성적</th>
+            <th>상벌점</th>
+            <th>최근 출입시간</th>
+        </tr>
+        <tr>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+        </tr>
+    </table><br/>
+
+    <div id="points_list">
+        <a href="">상벌점 내역</a>
+        <table border="1" cellspacing="0" style="margin: auto;">
+            <tr>
+                <th>No</th>
+                <th>부여시간</th>
+                <th>상점/벌점</th>
+                <th>사유</th>
+                <th>점수</th>
+            </tr>
+            <tr>
+                <th>?</th>
+                <th>?</th>
+                <th>?</th>
+                <th>?</th>
+                <th>?</th>
+            </tr>
+        </table><br/>
+    </div>
+    
+    <div id="time_list">
+        <a href="">출입시간 기록</a>
+        <table border="1" cellspacing="0" style="margin: auto;">
+            <tr>
+                <th>No</th>
+                <th>출입시간</th>
+            </tr>
+            <tr>
+                <th>?</th>
+                <th>?</th>
+            </tr>
+        </table><br/>
+    </div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>입주자 메인화면</title>
+    
+    <style>
+    body{
+        text-align: center;
+    }
+
+    #info{
+        background-color: #F4E9E6;
+        padding: 100px;
+    }
+    
+    #things{
+        background-color: #F4E9E6;
+        padding: 100px;
+    }
+    
+    #points{
+        /*background-color: #F4E9E6;*/
+        padding: 100px;
+    }
+
+    #overnight{
+        background-color: #F4E9E6;
+        padding: 100px;
+    }
+
+    #leaving{
+        /*background-color: #F4E9E6;*/
+        padding: 100px;
+    }
+
+    #bottom{
+        background-color: #F4E9E6;
+        padding: 10px;
+    }
+
+    #Menu{
+        height: 30px;
+
+        margin-top: 30px;
+    }
+    
+    ul{
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    li{
+        list-style: none;
+        display: inline-block;
+        line-height: 30px;
+    }
+
+    .menu{
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        width: 150px;
+    }
+
+    .menu:hover{
+        background-color: #F4E9E6;
+    }
+    </style>
+    <script>
+        function stinfomod_popup(){
+            window.open("st_info_mod.html", "입주자회원정보수정", "width=500, height=400, left=100, top=50");
+        }
+    </script>
+</head>
+
+<body>
+    <div id="info">
+        <h1>OOO님, 안녕하세요</h1>
+        <a>마지막 출입시간: </a><br/>
+        <a>총 상벌점: </a><br/><br/>
+        <a onclick="stinfomod_popup()">회원정보 수정</a>
+    </div>
+    
+    <nav id="Menu">
+        <ul>
+            <li><a class="menu" href="#things">물품 등록</a></li>
+            <li><a class="menu" href="#points">상벌점 내역</a></li>
+            <li><a class="menu" href="#overnight">외박신청서</a></li>
+            <li><a class="menu" href="#leaving">퇴거신청서</a></li>
+        </ul>
+    </nav>
+    
+
+    <div id="things" style="clear: both;">
+        <h1>물품 등록</h1>
+        <form action="">
+            <a>물품 번호</a>
+            <input type="text"/> <br/>
+            <a>물품 종류</a>
+            <select>
+                <option selected>1</option>
+                <option selected>1</option>
+                <option selected>1</option>
+                <option selected>1</option>
+            </select> <br/>
+            <input type="submit" value="등록"/>
+        </form>
+    </div>
+        
+
+    <div id="points">
+        <h1>상벌점 내역</h1>
+        <table border="1" cellspacing="0" style="margin: auto;">
+            <tr>
+                <th>No</th>
+                <th>상점/벌점</th>
+                <th>사유</th>
+                <th>점수</th>
+            </tr>
+            <tr>
+                <th>?</th>
+                <th>?</th>
+                <th>?</th>
+                <th>?</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="overnight">
+        <h1>외박신청서</h1>
+        <form name="overnight_apply" action="">
+            <a>외박사유</a> <textarea name="over_reason" rows="5" cols="50"></textarea> <br/>
+            <a>외박기간</a> <input name="start_date" type="date"/> ~ <input name="end_date" type="date"/> <br/>
+            <input type="button" value="신청" onclick="chk1()"/>
+            <input type="reset" value="취소"/>
+        </form>
+    </div>
+
+    <div id="leaving">
+        <h1>퇴거신청서</h1>
+        <form name="leaving_apply" action="">
+            <a>퇴거사유</a> <textarea name="leaving_reason" rows="5" cols="50"></textarea> <br/>
+            <a>퇴거날짜</a> <input value="" name="leaving_date" type="date"/> <br/>
+            <input type="button" value="신청" onclick="chk2()"/>
+            <input type="reset" value="취소"/>
+        </form>
+    </div>
+
+    <div id="bottom">
+        <a>기숙사 관리 홈페이지</a>
+    </div>
+
+    <script>
+    function chk1(){
+        if(overnight_apply.over_reason.value==""){
+            alert("외박사유를 입력해주세요.");
+            overnight_apply.over_reason.focus();
+        }
+        else if(overnight_apply.start_date.value==""){
+            alert("외박기간(시작일)을 입력해주세요.");
+            overnight_apply.start_date.focus();
+        }
+        else if(overnight_apply.end_date.value==""){
+            alert("외박기간(마지막일)을 입력해주세요");
+            overnight_apply.end_date.focus();
+        }
+        else{
+            alert("외박신청이 완료되었습니다.");
+            document.overnight_apply.submit();
+    }}
+    function chk2(){
+        if(leaving_apply.leaving_reason.value==""){
+            alert("퇴거사유를 입력해주세요.");
+            leaving_apply.leaving_reason.focus();
+        }
+        else if(leaving_apply.leaving_date.value==""){
+            alert("퇴거날짜를 입력해주세요.");
+            leaving_apply.leaving_date.focus();
+        }
+        else{
+            /*if(comfirm("정말 퇴거신청하시겠습니까?")==true){*/
+                alert("퇴거신청이 완료되었습니다.");
+                /*locaation.href="main.html";*/
+                /**/
+                document.leaving_apply.submit();
+            }/* else{
+                return;
+            }
+        }*/
+    }
+    </script>
+</body>
+</html>

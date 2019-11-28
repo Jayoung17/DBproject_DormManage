@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회원가입 - 관리자</title>
+</head>
+<body>
+    <h1>관리자 회원가입</h1>
+    <form name="manager_join" action="">
+    <a>소속 기숙사</a> 
+    <select name="dorm">
+        <option value="" selected>선택</option>
+        <option>기숙사1</option>
+        <option>기숙사2</option>
+        <option>기숙사3</option>
+    </select><br/>
+    <a>관리자번호(ID)</a> <input name="id" type="text"/><br/>
+    <a>비밀번호(PW)</a> <input name="pw" type="password"/><br/>
+    <a>이름</a> <input name="name" type="text"/><br/>
+    <a>성별</a> 
+    <select name="gender">
+        <option value="" selected>선택</option>
+        <option>남</option>
+        <option>여</option>        
+    </select><br/>
+    <a>전화번호(숫자만 입력, 예: 01012341234)</a><br/>
+    <input name="phone_number" type="text"/><br/>
+    <input type="button" value="가입" onclick="chk()"/>
+    <input type="button" value="취소" onclick="location.href='main.html'"/>
+    </form>
+    <script>
+        function chk(){
+            if(manager_join.dorm.value==""){
+                alert("소속 기숙사를 선택해주세요.");
+                manager_join.dorm.focus();
+            }
+            else if(manager_join.id.value==""){
+                alert("관리자번호(ID)를 입력해주세요.");
+                manager_join.id.focus();
+            }
+            else if(manager_join.pw.value==""){
+                alert("비밀번호(PW)를 입력해주세요.");
+                manager_join.pw.focus();
+            }
+            else if(manager_join.name.value==""){
+                alert("이름을 입력해주세요.");
+                manager_join.name.focus();
+            }
+            else if(manager_join.gender.value==""){
+                alert("성별을 선택해주세요.");
+                manager_join.gender.focus();
+            }
+            else if(manager_join.phone_number.value==""){
+                alert("전화번호를 입력해주세요.");
+                manager_join.phone_number.focus();
+            }
+            else{
+                alert("회원가입이 완료되었습니다.");
+                document.manager_join.submit();
+                location.href="main.html";
+        }}
+    </script>
+</body>
+</html>
