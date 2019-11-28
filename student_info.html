@@ -18,6 +18,17 @@
 </head>
 <body>
     <h1 style="text-align: center;">학생 정보</h1>
+    <p style="text-align: center"><a onclick="chk()">삭제</a></p>
+    <script>
+        function chk(){
+            if(confirm("해당 학생 정보를 정말 삭제하시겠습니까?")==true){
+                /*삭제하기document.submit();*/
+                alert("삭제가 완료되었습니다.");
+            } else{
+                return;
+            }
+        }
+    </script>
     <table border="1" cellspacing="0" style="margin: auto;">
         <tr>
             <th>기숙사</th>
@@ -27,7 +38,7 @@
             <th>호실</th>
             <th>직전학기성적</th>
             <th>상벌점</th>
-            <th>최근 출입시간 순</th>
+            <th>최근 출입시간</th>
         </tr>
         <tr>
             <th>?</th>
@@ -40,6 +51,7 @@
             <th>?</th>
         </tr>
     </table><br/>
+
     <div id="points_list">
         <a href="">상벌점 내역</a>
         <table border="1" cellspacing="0" style="margin: auto;">
@@ -59,6 +71,7 @@
             </tr>
         </table><br/>
     </div>
+    
     <div id="time_list">
         <a href="">출입시간 기록</a>
         <table border="1" cellspacing="0" style="margin: auto;">
