@@ -13,50 +13,51 @@
     </script>
 </head>
 <body>
-    <div id="points">
-        <a>검색</a>
-        <select>
-            <option selected>선택</option>
-            <option>기숙사</option>
-            <option>학번</option>
-            <option>이름</option>
-        </select>
-        <input type="text"/>
-        <input type="submit" value="검색"/> <br/><br/>
-        <a>정렬 기준</a>
-        <select>
-            <option selected>선택</option>
-            <option>벌점 높은 순</option>
-            <option>최근 출입시간 순</option>
-            <option>남자만</option>
-            <option>여자만</option>
-        </select>
-        <input type="submit" value="정렬"/>
-        <br/><br/>
-        <table border="1" cellspacing="0" style="margin: auto;">
-            <tr>
-                <th>No</th>
-                <th>기숙사</th>
-                <th>성별</th>
-                <th>학번</th>
-                <th>이름</th>
-                <th>호실</th>
-                <th>상벌점</th>
-                <th>최근 출입시간 순</th>
-                <th>/</th>
-            </tr>
-            <tr>
-                <th>?</th>
-                <th>?</th>
-                <th>?</th>
-                <th>?</th>
-                <th>?</th>
-                <th>?</th>
-                <th>?</th>
-                <th>?</th>
-                <th><a onclick='st_info_popup();'>정보보기</a></th>
-            </tr>
-        </table>
-    </div>
+    <h1 style="text-align: center;">입주자 목록</h1>
+    <select>
+        <option selected>선택</option>
+        <option>기숙사</option>
+        <option>학번</option>
+        <option>이름</option>
+    </select>
+    <select>
+        <option selected>선택</option>
+        <option>남자</option>
+        <option>여자</option>
+    </select>
+    <input type="text"/>
+    <input type="submit" value="검색"/> <br/><br/>
+    <a>정렬 기준</a>
+    <select>
+        <option selected>선택</option>
+        <option>벌점 높은 순</option>
+        <option>최근 출입시간 순</option>
+    </select>
+    <input type="submit" value="정렬"/>
+    <br/><br/>
+    <table border="1" cellspacing="0" style="margin: auto;">
+        <tr>
+            <th>No</th>
+            <th>기숙사</th>
+            <th>성별</th>
+            <th>학번</th>
+            <th>이름</th>
+            <th>호실</th>
+            <th>상벌점</th>
+            <th>최근 출입시간</th>
+            <th>/</th>
+        </tr>
+        <tr>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th><a onclick='st_info_popup();'>정보보기</a></th>
+        </tr>
+    </table>
 </body>
 </html>
