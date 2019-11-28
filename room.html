@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>호실 관리</title>
+
+    <script>
+        function st_info_popup(){
+            window.open("things_info.html", "물품정보", "width=800, height=400, left=100, top=50");
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">호실 관리</h1>
+    <a>기숙사</a>
+    <select>
+        <option selected>선택</option>
+        <option>기숙사1</option>
+        <option>기숙사2</option>
+        <option>기숙사3</option>
+    </select>
+    <a>성별</a>
+    <select>
+        <option selected>선택</option>
+        <option>남자</option>
+        <option>여자</option>
+    </select><br/>
+    <a>층</a>
+    <select>
+        <option selected>선택</option>
+        <option>1층</option>
+        <option>2층</option>
+        <option>3층</option>
+        <option>4층</option>
+        <option>5층</option>
+        <option>6층</option>
+        <option>7층</option>
+        <option>8층</option>
+        <option>9층</option>
+        <option>10층</option>
+    </select><br/>
+    <a>호실</a>
+    <input type="text"/>
+    <input type="submit" value="검색"/>     <input type="checkbox" name="possible"/> <a>입주 불가능한 호실 제외</a> <br/><br/>
+    <table border="1" cellspacing="0" style="margin: auto;">
+        <tr>
+            <th>기숙사</th>
+            <th>성별</th>
+            <th>호실</th>
+            <th>학번</th>
+            <th>이름</th>
+            <th>입주가능한 인원수</th>
+            <th>/</th>
+        </tr>
+        <tr>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>?</th>
+            <th>
+                <input type="button" value="추가" onclick='roomadd_popup()'>
+                <input type="button" value="삭제" onclick=''>
+            </th>
+        </tr>
+    </table>
+    <script>
+    function roomadd_popup(){
+        window.open("room_add.html", "호실학생추가", "width=500, height=400, left=100, top=50");
+    }
+
+    </script>
+</body>
+</html>
