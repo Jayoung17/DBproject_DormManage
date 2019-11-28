@@ -2,7 +2,6 @@
     "telemetry.machineId": "1440a9e1ae928127e97fc9e142beb628b38d7aa8bf54f030ba03af12ae327b9d",
     "openedPathsList": {
         "workspaces3": [
-            "file:///var/www/html/Dorm_manager",
             "file:///var/www/html"
         ],
         "files2": []
@@ -13,35 +12,35 @@
                 "items": [
                     {
                         "id": "workbench.action.files.newUntitledFile",
-                        "label": "&&New File"
+                        "label": "새 파일(&&N)"
                     },
                     {
                         "id": "workbench.action.newWindow",
-                        "label": "New &&Window"
+                        "label": "새 창(&&W)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.files.openFile",
-                        "label": "&&Open File..."
+                        "label": "파일 열기(&&O)..."
                     },
                     {
                         "id": "workbench.action.files.openFolder",
-                        "label": "Open &&Folder..."
+                        "label": "폴더 열기(&&F)..."
                     },
                     {
                         "id": "workbench.action.openWorkspace",
-                        "label": "Open Wor&&kspace..."
+                        "label": "작업 영역 열기(&&K)..."
                     },
                     {
                         "id": "",
-                        "label": "Open &&Recent",
+                        "label": "최근 항목 열기(&&R)",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "닫힌 편집기 다시 열기(&&R)"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -50,18 +49,7 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/var/www/html/Dorm_manager",
-                                        "external": "file:///var/www/html/Dorm_manager",
-                                        "path": "/var/www/html/Dorm_manager",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/var/www/html/Dorm_manager"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
+                                        "fsPath": "/var/www/html",
                                         "external": "file:///var/www/html",
                                         "path": "/var/www/html",
                                         "scheme": "file"
@@ -74,14 +62,14 @@
                                 },
                                 {
                                     "id": "workbench.action.openRecent",
-                                    "label": "&&More..."
+                                    "label": "자세히(&&M)..."
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.clearRecentFiles",
-                                    "label": "&&Clear Recently Opened"
+                                    "label": "최근에 연 항목 지우기(&&C)"
                                 }
                             ]
                         }
@@ -91,79 +79,79 @@
                     },
                     {
                         "id": "addRootFolder",
-                        "label": "A&&dd Folder to Workspace..."
+                        "label": "작업 영역에 폴더 추가(&&D)..."
                     },
                     {
                         "id": "workbench.action.saveWorkspaceAs",
-                        "label": "Save Workspace As..."
+                        "label": "작업 영역을 다른 이름으로 저장"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.files.save",
-                        "label": "&&Save"
+                        "label": "저장(&&S)"
                     },
                     {
                         "id": "workbench.action.files.saveAs",
-                        "label": "Save &&As..."
+                        "label": "다른 이름으로 저장(&&A)..."
                     },
                     {
                         "id": "workbench.action.files.saveAll",
-                        "label": "Save A&&ll"
+                        "label": "모두 저장(&&L)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.toggleAutoSave",
-                        "label": "A&&uto Save"
+                        "label": "자동 저장(&&U)"
                     },
                     {
                         "id": "",
-                        "label": "&&Preferences",
+                        "label": "기본 설정(&&P)",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.openSettings",
-                                    "label": "&&Settings"
+                                    "label": "설정(&&S)"
                                 },
                                 {
                                     "id": "settings.filterByOnline",
-                                    "label": "&&Online Services Settings"
+                                    "label": "온라인 서비스 설정(& &O)"
                                 },
                                 {
                                     "id": "workbench.view.extensions",
-                                    "label": "&&Extensions"
+                                    "label": "확장(&&E)"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.openGlobalKeybindings",
-                                    "label": "&&Keyboard Shortcuts"
+                                    "label": "바로 가기 키(&&K)"
                                 },
                                 {
                                     "id": "workbench.extensions.action.showRecommendedKeymapExtensions",
-                                    "label": "&&Keymaps"
+                                    "label": "키맵(&&K)"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.openSnippets",
-                                    "label": "User &&Snippets"
+                                    "label": "사용자 코드 조각(&&S)"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.selectTheme",
-                                    "label": "&&Color Theme"
+                                    "label": "색 테마(&&C)"
                                 },
                                 {
                                     "id": "workbench.action.selectIconTheme",
-                                    "label": "File &&Icon Theme"
+                                    "label": "파일 아이콘 테마(&&I)"
                                 }
                             ]
                         }
@@ -173,26 +161,26 @@
                     },
                     {
                         "id": "workbench.action.files.revert",
-                        "label": "Re&&vert File"
+                        "label": "파일 되돌리기(&&V)"
                     },
                     {
                         "id": "workbench.action.closeActiveEditor",
-                        "label": "&&Close Editor"
+                        "label": "편집기 닫기(&&C)"
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder"
+                        "label": "폴더 닫기(&&F)"
                     },
                     {
                         "id": "workbench.action.closeWindow",
-                        "label": "Clos&&e Window"
+                        "label": "창 닫기(&&E)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.quit",
-                        "label": "E&&xit"
+                        "label": "끝내기(&&X)"
                     }
                 ]
             },
@@ -200,67 +188,67 @@
                 "items": [
                     {
                         "id": "undo",
-                        "label": "&&Undo"
+                        "label": "실행 취소(&&U)"
                     },
                     {
                         "id": "redo",
-                        "label": "&&Redo"
+                        "label": "다시 실행(&&R)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "editor.action.clipboardCutAction",
-                        "label": "Cu&&t"
+                        "label": "잘라내기(&&T)"
                     },
                     {
                         "id": "editor.action.clipboardCopyAction",
-                        "label": "&&Copy"
+                        "label": "복사(&&C)"
                     },
                     {
                         "id": "editor.action.clipboardPasteAction",
-                        "label": "&&Paste"
+                        "label": "붙여넣기(&&P)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "actions.find",
-                        "label": "&&Find"
+                        "label": "찾기(&&F)"
                     },
                     {
                         "id": "editor.action.startFindReplaceAction",
-                        "label": "&&Replace"
+                        "label": "바꾸기(&&R)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.findInFiles",
-                        "label": "Find &&in Files"
+                        "label": "파일에서 찾기(&&I)"
                     },
                     {
                         "id": "workbench.action.replaceInFiles",
-                        "label": "Replace &&in Files"
+                        "label": "파일에서 바꾸기(&&I)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "editor.action.commentLine",
-                        "label": "&&Toggle Line Comment"
+                        "label": "줄 주석 설정/해제(&&T)"
                     },
                     {
                         "id": "editor.action.blockComment",
-                        "label": "Toggle &&Block Comment"
+                        "label": "블록 주석 설정/해제(&&B)"
                     },
                     {
                         "id": "editor.emmet.action.expandAbbreviation",
-                        "label": "Emmet: E&&xpand Abbreviation"
+                        "label": "Emmet: 약어 확장(&&X)"
                     },
                     {
                         "id": "workbench.action.showEmmetCommands",
-                        "label": "E&&mmet..."
+                        "label": "Emmet(&&M)..."
                     }
                 ]
             },
@@ -268,69 +256,69 @@
                 "items": [
                     {
                         "id": "editor.action.selectAll",
-                        "label": "&&Select All"
+                        "label": "모두 선택(&&S)"
                     },
                     {
                         "id": "editor.action.smartSelect.expand",
-                        "label": "&&Expand Selection"
+                        "label": "선택 영역 확장(&&E)"
                     },
                     {
                         "id": "editor.action.smartSelect.shrink",
-                        "label": "&&Shrink Selection"
+                        "label": "선택 영역 축소(&&S)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "editor.action.copyLinesUpAction",
-                        "label": "&&Copy Line Up"
+                        "label": "위에 줄 복사(&&C)"
                     },
                     {
                         "id": "editor.action.copyLinesDownAction",
-                        "label": "Co&&py Line Down"
+                        "label": "아래에 줄 복사(&&P)"
                     },
                     {
                         "id": "editor.action.moveLinesUpAction",
-                        "label": "Mo&&ve Line Up"
+                        "label": "줄 위로 이동(&&V)"
                     },
                     {
                         "id": "editor.action.moveLinesDownAction",
-                        "label": "Move &&Line Down"
+                        "label": "줄 아래로 이동(&&L)"
                     },
                     {
                         "id": "editor.action.duplicateSelection",
-                        "label": "&&Duplicate Selection"
+                        "label": "&&중복된 선택 영역"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.toggleMultiCursorModifier",
-                        "label": "Switch to Ctrl+Click for Multi-Cursor"
+                        "label": "다중 커서에 Ctrl+클릭 사용"
                     },
                     {
                         "id": "editor.action.insertCursorAbove",
-                        "label": "&&Add Cursor Above"
+                        "label": "위에 커서 추가(&&A)"
                     },
                     {
                         "id": "editor.action.insertCursorBelow",
-                        "label": "A&&dd Cursor Below"
+                        "label": "아래에 커서 추가(&&D)"
                     },
                     {
                         "id": "editor.action.insertCursorAtEndOfEachLineSelected",
-                        "label": "Add C&&ursors to Line Ends"
+                        "label": "줄 끝에 커서 추가(&&U)"
                     },
                     {
                         "id": "editor.action.addSelectionToNextFindMatch",
-                        "label": "Add &&Next Occurrence"
+                        "label": "다음 항목 추가(&&N)"
                     },
                     {
                         "id": "editor.action.addSelectionToPreviousFindMatch",
-                        "label": "Add P&&revious Occurrence"
+                        "label": "이전 항목 추가(&&R)"
                     },
                     {
                         "id": "editor.action.selectHighlights",
-                        "label": "Select All &&Occurrences"
+                        "label": "모든 항목 선택(&&O)"
                     }
                 ]
             },
@@ -338,155 +326,156 @@
                 "items": [
                     {
                         "id": "workbench.action.showCommands",
-                        "label": "&&Command Palette..."
+                        "label": "명령 팔레트(&&C)..."
                     },
                     {
                         "id": "workbench.action.openView",
-                        "label": "&&Open View..."
+                        "label": "뷰 열기(&&O)..."
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "",
-                        "label": "&&Appearance",
+                        "label": "모양(&&A)",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.toggleFullScreen",
-                                    "label": "&&Full Screen"
+                                    "label": "전체 화면(&&F)"
                                 },
                                 {
                                     "id": "workbench.action.toggleZenMode",
-                                    "label": "Zen Mode"
+                                    "label": "Zen 모드"
                                 },
                                 {
                                     "id": "workbench.action.toggleCenteredLayout",
-                                    "label": "Centered Layout"
+                                    "label": "가운데 맞춤 레이아웃"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.toggleMenuBar",
-                                    "label": "Show Menu &&Bar",
+                                    "label": "메뉴 모음 표시(&&B)",
                                     "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar",
+                                    "label": "사이드바 표시(&&S)",
                                     "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
-                                    "label": "Show S&&tatus Bar",
+                                    "label": "상태 표시줄 표시(&&T)",
                                     "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleActivityBarVisibility",
-                                    "label": "Show &&Activity Bar",
-                                    "checked": true
-                                },
-                                {
-                                    "id": "workbench.action.toggleEditorVisibility",
-                                    "label": "Show &&Editor Area",
+                                    "label": "작업 막대 표시(&&A)",
                                     "checked": true
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "Show &&Panel"
+                                    "label": "패널 표시(&&P)",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "workbench.action.toggleEditorVisibility",
+                                    "label": "편집기 영역 &&표시",
+                                    "checked": true
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarPosition",
-                                    "label": "&&Move Side Bar Right"
+                                    "label": "사이드바를 오른쪽으로 이동(&&M)"
                                 },
                                 {
                                     "id": "workbench.action.togglePanelPosition",
-                                    "label": "Move Panel Right"
+                                    "label": "오른쪽으로 패널 이동"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.zoomIn",
-                                    "label": "&&Zoom In"
+                                    "label": "확대(&&Z)"
                                 },
                                 {
                                     "id": "workbench.action.zoomOut",
-                                    "label": "&&Zoom Out"
+                                    "label": "축소(&&Z)"
                                 },
                                 {
                                     "id": "workbench.action.zoomReset",
-                                    "label": "&&Reset Zoom"
+                                    "label": "확대/축소 다시 설정(&&R)"
                                 }
                             ]
                         }
                     },
                     {
                         "id": "",
-                        "label": "Editor &&Layout",
+                        "label": "편집기 레이아웃(&&L)",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.splitEditorUp",
-                                    "label": "Split &&Up"
+                                    "label": "위쪽 분할(&&U)"
                                 },
                                 {
                                     "id": "workbench.action.splitEditorDown",
-                                    "label": "Split &&Down"
+                                    "label": "아래쪽 분할(&&D)"
                                 },
                                 {
                                     "id": "workbench.action.splitEditorLeft",
-                                    "label": "Split &&Left"
+                                    "label": "왼쪽 분할(&&L)"
                                 },
                                 {
                                     "id": "workbench.action.splitEditorRight",
-                                    "label": "Split &&Right"
+                                    "label": "오른쪽 분할(&&R)"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutSingle",
-                                    "label": "&&Single"
+                                    "label": "단일(&&S)"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutTwoColumns",
-                                    "label": "&&Two Columns"
+                                    "label": "두 개 열(&&T)"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutThreeColumns",
-                                    "label": "T&&hree Columns"
+                                    "label": "세 개 열(&&H)"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutTwoRows",
-                                    "label": "T&&wo Rows"
+                                    "label": "두 개 행(&&W)"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutThreeRows",
-                                    "label": "Three &&Rows"
+                                    "label": "세 개 행(&&R)"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutTwoByTwoGrid",
-                                    "label": "&&Grid (2x2)"
+                                    "label": "그리드(2x2)(&&G)"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutTwoRowsRight",
-                                    "label": "Two R&&ows Right"
+                                    "label": "오른쪽 두 개 행(&&O)"
                                 },
                                 {
                                     "id": "workbench.action.editorLayoutTwoColumnsBottom",
-                                    "label": "Two &&Columns Bottom"
+                                    "label": "아래쪽 두 개 열(&&C)"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.toggleEditorGroupLayout",
-                                    "label": "Flip &&Layout"
+                                    "label": "레이아웃 대칭 이동(&&L)"
                                 }
                             ]
                         }
@@ -496,67 +485,67 @@
                     },
                     {
                         "id": "workbench.view.explorer",
-                        "label": "&&Explorer"
+                        "label": "탐색기(&&E)"
                     },
                     {
                         "id": "workbench.view.search",
-                        "label": "&&Search"
+                        "label": "검색(&&S)"
                     },
                     {
                         "id": "workbench.view.scm",
-                        "label": "S&&CM"
+                        "label": "SCM(&&C)"
                     },
                     {
                         "id": "workbench.view.debug",
-                        "label": "&&Debug"
+                        "label": "디버그(&&D)"
                     },
                     {
                         "id": "workbench.view.extensions",
-                        "label": "E&&xtensions"
+                        "label": "확장(&&X)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.output.toggleOutput",
-                        "label": "&&Output"
+                        "label": "출력(&&O)"
                     },
                     {
                         "id": "workbench.debug.action.toggleRepl",
-                        "label": "De&&bug Console"
+                        "label": "디버그 콘솔(&&B)"
                     },
                     {
                         "id": "workbench.action.terminal.toggleTerminal",
-                        "label": "&&Terminal"
+                        "label": "터미널(&&T)"
                     },
                     {
                         "id": "workbench.actions.view.problems",
-                        "label": "&&Problems"
+                        "label": "문제(&&P)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "Toggle &&Word Wrap"
+                        "label": "자동 줄 바꿈 설정/해제(&&W)"
                     },
                     {
                         "id": "editor.action.toggleMinimap",
-                        "label": "Show &&Minimap",
+                        "label": "미니맵 표시(&&M)",
                         "checked": true
                     },
                     {
                         "id": "breadcrumbs.toggle",
-                        "label": "Show &&Breadcrumbs",
+                        "label": "이동 경로 표시(&&B)",
                         "checked": true
                     },
                     {
                         "id": "editor.action.toggleRenderWhitespace",
-                        "label": "&&Render Whitespace"
+                        "label": "공백 렌더링(&&R)"
                     },
                     {
                         "id": "editor.action.toggleRenderControlCharacter",
-                        "label": "Render &&Control Characters"
+                        "label": "제어 문자 렌더링(&&C)"
                     }
                 ]
             },
@@ -564,101 +553,101 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "뒤로(&&B)"
                     },
                     {
                         "id": "workbench.action.navigateForward",
-                        "label": "&&Forward",
+                        "label": "앞으로(&&F)",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "마지막 편집 위치(&&L)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "",
-                        "label": "Switch &&Editor",
+                        "label": "편집기 전환(&&E)",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.nextEditor",
-                                    "label": "&&Next Editor"
+                                    "label": "다음 편집기(&&N)"
                                 },
                                 {
                                     "id": "workbench.action.previousEditor",
-                                    "label": "&&Previous Editor"
+                                    "label": "이전 편집기(&&P)"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.openNextRecentlyUsedEditorInGroup",
-                                    "label": "&&Next Used Editor in Group"
+                                    "label": "그룹에서 다음에 사용되는 편집기(&&N)"
                                 },
                                 {
                                     "id": "workbench.action.openPreviousRecentlyUsedEditorInGroup",
-                                    "label": "&&Previous Used Editor in Group"
+                                    "label": "그룹에서 이전에 사용된 편집기(&&P)"
                                 }
                             ]
                         }
                     },
                     {
                         "id": "",
-                        "label": "Switch &&Group",
+                        "label": "그룹 전환(&&G)",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.focusFirstEditorGroup",
-                                    "label": "Group &&1"
+                                    "label": "그룹 1(&&1)"
                                 },
                                 {
                                     "id": "workbench.action.focusSecondEditorGroup",
-                                    "label": "Group &&2"
+                                    "label": "그룹 2(&&2)"
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3"
+                                    "label": "그룹 3(&&3)"
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4"
+                                    "label": "그룹 4(&&4)"
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5"
+                                    "label": "그룹 5(&&5)"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group"
+                                    "label": "다음 그룹(&&N)"
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group"
+                                    "label": "이전 그룹(&&P)"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left"
+                                    "label": "왼쪽 그룹(&&L)"
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right"
+                                    "label": "오른쪽 그룹(&&R)"
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above"
+                                    "label": "위 그룹(&&A)"
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below"
+                                    "label": "아래 그룹(&&B)"
                                 }
                             ]
                         }
@@ -668,63 +657,63 @@
                     },
                     {
                         "id": "workbench.action.quickOpen",
-                        "label": "Go to &&File..."
+                        "label": "파일로 이동(&&F)..."
                     },
                     {
                         "id": "workbench.action.showAllSymbols",
-                        "label": "Go to Symbol in &&Workspace..."
+                        "label": "작업 영역의 기호로 이동(&&W)..."
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.gotoSymbol",
-                        "label": "Go to &&Symbol in File..."
+                        "label": "파일의 기호로 이동(&&S)..."
                     },
                     {
                         "id": "editor.action.goToDeclaration",
-                        "label": "Go to &&Definition"
+                        "label": "정의로 이동(&&D)"
                     },
                     {
                         "id": "editor.action.goToTypeDefinition",
-                        "label": "Go to &&Type Definition"
+                        "label": "형식 정의로 이동(&&T)"
                     },
                     {
                         "id": "editor.action.goToImplementation",
-                        "label": "Go to &&Implementation"
+                        "label": "구현으로 이동(&&I)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.gotoLine",
-                        "label": "Go to &&Line/Column..."
+                        "label": "줄/열로 이동(&&L)..."
                     },
                     {
                         "id": "editor.action.jumpToBracket",
-                        "label": "Go to &&Bracket"
+                        "label": "대괄호로 이동(&&B)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "editor.action.marker.nextInFiles",
-                        "label": "Next &&Problem"
+                        "label": "다음 문제(&&P)"
                     },
                     {
                         "id": "editor.action.marker.prevInFiles",
-                        "label": "Previous &&Problem"
+                        "label": "이전 문제(&&P)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "editor.action.dirtydiff.next",
-                        "label": "Next &&Change"
+                        "label": "다음 변경 내용(&&C)"
                     },
                     {
                         "id": "editor.action.dirtydiff.previous",
-                        "label": "Previous &&Change"
+                        "label": "이전 변경 내용(&&C)"
                     }
                 ]
             },
@@ -732,20 +721,20 @@
                 "items": [
                     {
                         "id": "workbench.action.debug.start",
-                        "label": "&&Start Debugging"
+                        "label": "디버깅 시작(&&S)"
                     },
                     {
                         "id": "workbench.action.debug.run",
-                        "label": "Start &&Without Debugging"
+                        "label": "디버깅하지 않고 시작(&&W)"
                     },
                     {
                         "id": "workbench.action.debug.stop",
-                        "label": "&&Stop Debugging",
+                        "label": "디버깅 중지(&&S)",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.debug.restart",
-                        "label": "&&Restart Debugging",
+                        "label": "디버깅 다시 시작(&&R)",
                         "enabled": false
                     },
                     {
@@ -753,33 +742,33 @@
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "Open &&Configurations"
+                        "label": "구성 열기(&&C)"
                     },
                     {
                         "id": "debug.addConfiguration",
-                        "label": "A&&dd Configuration..."
+                        "label": "구성 추가(&&D)..."
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.debug.stepOver",
-                        "label": "Step &&Over",
+                        "label": "프로시저 단위 실행(&&O)",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.debug.stepInto",
-                        "label": "Step &&Into",
+                        "label": "한 단계씩 코드 실행(&&I)",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.debug.stepOut",
-                        "label": "Step O&&ut",
+                        "label": "프로시저 나가기(&&U)",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.debug.continue",
-                        "label": "&&Continue",
+                        "label": "계속(&&C)",
                         "enabled": false
                     },
                     {
@@ -787,28 +776,28 @@
                     },
                     {
                         "id": "editor.debug.action.toggleBreakpoint",
-                        "label": "Toggle &&Breakpoint"
+                        "label": "중단점 설정/해제(&&B)"
                     },
                     {
                         "id": "",
-                        "label": "&&New Breakpoint",
+                        "label": "새 중단점(&&N)",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "editor.debug.action.conditionalBreakpoint",
-                                    "label": "&&Conditional Breakpoint..."
+                                    "label": "조건부 중단점(&&C)..."
                                 },
                                 {
                                     "id": "editor.debug.action.toggleInlineBreakpoint",
-                                    "label": "Inline Breakp&&oint"
+                                    "label": "인라인 중단점(&&O)"
                                 },
                                 {
                                     "id": "workbench.debug.viewlet.action.addFunctionBreakpointAction",
-                                    "label": "&&Function Breakpoint..."
+                                    "label": "함수 중단점(&&F)..."
                                 },
                                 {
                                     "id": "editor.debug.action.toggleLogPoint",
-                                    "label": "&&Logpoint..."
+                                    "label": "Logpoint(&&L)..."
                                 }
                             ]
                         }
@@ -818,22 +807,22 @@
                     },
                     {
                         "id": "workbench.debug.viewlet.action.enableAllBreakpoints",
-                        "label": "&&Enable All Breakpoints"
+                        "label": "모든 중단점 사용(&&E)"
                     },
                     {
                         "id": "workbench.debug.viewlet.action.disableAllBreakpoints",
-                        "label": "Disable A&&ll Breakpoints"
+                        "label": "모든 중단점 사용 안 함(&&L)"
                     },
                     {
                         "id": "workbench.debug.viewlet.action.removeAllBreakpoints",
-                        "label": "Remove &&All Breakpoints"
+                        "label": "모든 중단점 제거(&&A)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "debug.installAdditionalDebuggers",
-                        "label": "&&Install Additional Debuggers..."
+                        "label": "추가 디버거 설치(&&I)..."
                     }
                 ]
             },
@@ -841,48 +830,47 @@
                 "items": [
                     {
                         "id": "workbench.action.terminal.new",
-                        "label": "&&New Terminal"
+                        "label": "새 터미널(&&N)"
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "터미널 분할(&&S)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.tasks.runTask",
-                        "label": "&&Run Task..."
+                        "label": "작업 실행(&&R)..."
                     },
                     {
                         "id": "workbench.action.tasks.build",
-                        "label": "Run &&Build Task..."
+                        "label": "빌드 작업 실행(&&B)..."
                     },
                     {
                         "id": "workbench.action.terminal.runActiveFile",
-                        "label": "Run &&Active File"
+                        "label": "활성 파일 실행(&&A)"
                     },
                     {
                         "id": "workbench.action.terminal.runSelectedText",
-                        "label": "Run &&Selected Text"
+                        "label": "선택한 텍스트 실행(&&S)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.tasks.showTasks",
-                        "label": "Show Runnin&&g Tasks...",
+                        "label": "실행 중인 작업 표시(&&G)...",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.tasks.restartTask",
-                        "label": "R&&estart Running Task...",
+                        "label": "실행 중인 작업 다시 시작(&&E)...",
                         "enabled": false
                     },
                     {
                         "id": "workbench.action.tasks.terminate",
-                        "label": "&&Terminate Task...",
+                        "label": "작업 종료(&&T)...",
                         "enabled": false
                     },
                     {
@@ -890,11 +878,11 @@
                     },
                     {
                         "id": "workbench.action.tasks.configureTaskRunner",
-                        "label": "&&Configure Tasks..."
+                        "label": "작업 구성(&&C)..."
                     },
                     {
                         "id": "workbench.action.tasks.configureDefaultBuildTask",
-                        "label": "Configure De&&fault Build Task..."
+                        "label": "기본 빌드 작업 구성(&&F)..."
                     }
                 ]
             },
@@ -902,78 +890,78 @@
                 "items": [
                     {
                         "id": "workbench.action.showWelcomePage",
-                        "label": "&&Welcome"
+                        "label": "시작(&&W)"
                     },
                     {
                         "id": "workbench.action.showInteractivePlayground",
-                        "label": "I&&nteractive Playground"
+                        "label": "대화형 플레이그라운드(&&N)"
                     },
                     {
                         "id": "workbench.action.openDocumentationUrl",
-                        "label": "&&Documentation"
+                        "label": "설명서(&&D)"
                     },
                     {
                         "id": "update.showCurrentReleaseNotes",
-                        "label": "&&Release Notes"
+                        "label": "릴리스 정보(&&R)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.keybindingsReference",
-                        "label": "&&Keyboard Shortcuts Reference"
+                        "label": "바로 가기 키 참조(&&K)"
                     },
                     {
                         "id": "workbench.action.openIntroductoryVideosUrl",
-                        "label": "Introductory &&Videos"
+                        "label": "소개 비디오(&&V)"
                     },
                     {
                         "id": "workbench.action.openTipsAndTricksUrl",
-                        "label": "Tips and Tri&&cks"
+                        "label": "팁과 요령(&&C)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.openTwitterUrl",
-                        "label": "&&Join Us on Twitter"
+                        "label": "Twitter에서 참여(&&J)"
                     },
                     {
                         "id": "workbench.action.openRequestFeatureUrl",
-                        "label": "&&Search Feature Requests"
+                        "label": "검색 기능 요청(&&S)"
                     },
                     {
                         "id": "workbench.action.openIssueReporter",
-                        "label": "Report &&Issue"
+                        "label": "보고서 문제(&&I)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.openLicenseUrl",
-                        "label": "View &&License"
+                        "label": "라이선스 보기(&&L)"
                     },
                     {
                         "id": "workbench.action.openPrivacyStatementUrl",
-                        "label": "Privac&&y Statement"
+                        "label": "개인정보처리방침(&&Y)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.toggleDevTools",
-                        "label": "&&Toggle Developer Tools"
+                        "label": "개발자 도구 설정/해제(&&T)"
                     },
                     {
                         "id": "workbench.action.openProcessExplorer",
-                        "label": "Open &&Process Explorer"
+                        "label": "프로세스 탐색기 열기(&&P)"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.showAboutDialog",
-                        "label": "&&About"
+                        "label": "정보(&&A)"
                     }
                 ]
             }
@@ -1229,12 +1217,12 @@
                 "userSettingsLabel": "alt+z"
             },
             "workbench.action.navigateBack": {
-                "label": "Ctrl+Alt+-",
+                "label": "Ctrl+<Alt>+-",
                 "isNative": false,
                 "userSettingsLabel": "ctrl+alt+-"
             },
             "workbench.action.navigateForward": {
-                "label": "Ctrl+Shift+-",
+                "label": "Ctrl+<Shift>+-",
                 "isNative": false,
                 "userSettingsLabel": "ctrl+shift+-"
             },
@@ -1320,7 +1308,7 @@
                 "userSettingsLabel": "ctrl+g"
             },
             "editor.action.jumpToBracket": {
-                "label": "Ctrl+Shift+\\",
+                "label": "Ctrl+<Shift>+\\",
                 "isNative": false,
                 "userSettingsLabel": "ctrl+shift+\\"
             },
@@ -1381,7 +1369,7 @@
                 "userSettingsLabel": "shift+f9"
             },
             "workbench.action.terminal.new": {
-                "label": "Ctrl+Shift+`",
+                "label": "Ctrl+<Shift>+`",
                 "isNative": false,
                 "userSettingsLabel": "ctrl+shift+`"
             },
@@ -1406,15 +1394,15 @@
     },
     "theme": "vs-dark",
     "themeBackground": "#1e1e1e",
-    "pickerWorkingDir": "/var/www/html",
+    "pickerWorkingDir": "/var/www",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///var/www/html/Dorm_manager",
-            "backupPath": "/var/www/html/~/.vscode-root/Backups/065c7c4b24fbbe3d670ff6358fc7bc06",
+            "folder": "file:///var/www/html",
+            "backupPath": "/var/www/html/~/.vscode-root/Backups/40d1b2d83998fabacb726e5bc3d22129",
             "uiState": {
                 "mode": 1,
-                "x": 448,
-                "y": 128,
+                "x": 57,
+                "y": 90,
                 "width": 1024,
                 "height": 768
             }

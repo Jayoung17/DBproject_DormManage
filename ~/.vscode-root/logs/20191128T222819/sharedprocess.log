@@ -1,0 +1,11 @@
+[2019-11-28 22:28:22.407] [sharedprocess] [info] main {"machineId":"1440a9e1ae928127e97fc9e142beb628b38d7aa8bf54f030ba03af12ae327b9d","windowId":2}
+[2019-11-28 22:29:02.390] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-11-28 22:30:30.048] [sharedprocess] [info] Installing extension: ms-ceintl.vscode-language-pack-ko
+[2019-11-28 22:30:30.948] [sharedprocess] [info] Downloaded extension: ms-ceintl.vscode-language-pack-ko /tmp/684c56a6-78e0-4dc4-8038-4d523cfae5c2
+[2019-11-28 22:30:31.072] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ms-ceintl.vscode-language-pack-ko-1.40.2: ms-ceintl.vscode-language-pack-ko
+[2019-11-28 22:30:31.073] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-ceintl.vscode-language-pack-ko-1.40.2
+[2019-11-28 22:30:31.073] [sharedprocess] [info] Installation completed. ms-ceintl.vscode-language-pack-ko
+[2019-11-28 22:30:31.079] [sharedprocess] [info] Extensions installed successfully: ms-ceintl.vscode-language-pack-ko
+[2019-11-28 22:30:37.077] [sharedprocess] [info] main {"machineId":"1440a9e1ae928127e97fc9e142beb628b38d7aa8bf54f030ba03af12ae327b9d","windowId":2}
+[2019-11-28 22:31:17.065] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-11-28 22:31:17.074] [sharedprocess] [info] Skipping directory 278bf5b45b5f0f0fb6fd8dbc7a6d9a7c.ko. Language pack still in use.
