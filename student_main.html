@@ -69,12 +69,19 @@
         background-color: #F4E9E6;
     }
     </style>
+    <script>
+        function stinfomod_popup(){
+            window.open("st_info_mod.html", "입주자회원정보수정", "width=500, height=400, left=100, top=50");
+        }
+    </script>
 </head>
 
 <body>
     <div id="info">
-        <h1>ㅇㅇㅇ 안녕하세요</h1>
-        <a>입주자정보내용</a>
+        <h1>OOO님, 안녕하세요</h1>
+        <a>마지막 출입시간: </a><br/>
+        <a>총 상벌점: </a><br/><br/>
+        <a onclick="stinfomod_popup()">회원정보 수정</a>
     </div>
     
     <nav id="Menu">
@@ -108,11 +115,13 @@
         <h1>상벌점 내역</h1>
         <table border="1" cellspacing="0" style="margin: auto;">
             <tr>
+                <th>No</th>
                 <th>상점/벌점</th>
                 <th>사유</th>
-                <th>총 상벌점</th>
+                <th>점수</th>
             </tr>
             <tr>
+                <th>?</th>
                 <th>?</th>
                 <th>?</th>
                 <th>?</th>
@@ -122,25 +131,66 @@
 
     <div id="overnight">
         <h1>외박신청서</h1>
-        <form action="">
-            <a>외박사유</a> <textarea rows="5" cols="50"></textarea> <br/>
-            <a>외박기간</a> <input type="date"/> ~ <input type="date"/> <br/>
-            <input type="submit" value="신청"/>
+        <form name="overnight_apply" action="">
+            <a>외박사유</a> <textarea name="over_reason" rows="5" cols="50"></textarea> <br/>
+            <a>외박기간</a> <input name="start_date" type="date"/> ~ <input name="end_date" type="date"/> <br/>
+            <input type="button" value="신청" onclick="chk1()"/>
+            <input type="reset" value="취소"/>
         </form>
     </div>
 
     <div id="leaving">
         <h1>퇴거신청서</h1>
-        <form action="">
-            <a>퇴거사유</a> <textarea rows="5" cols="50"></textarea> <br/>
-            <a>퇴거날짜</a> <input type="date"/> <br/>
-            <input type="submit" value="신청"/>
+        <form name="leaving_apply" action="">
+            <a>퇴거사유</a> <textarea name="leaving_reason" rows="5" cols="50"></textarea> <br/>
+            <a>퇴거날짜</a> <input value="" name="leaving_date" type="date"/> <br/>
+            <input type="button" value="신청" onclick="chk2()"/>
+            <input type="reset" value="취소"/>
         </form>
     </div>
 
     <div id="bottom">
         <a>기숙사 관리 홈페이지</a>
-
     </div>
+
+    <script>
+    function chk1(){
+        if(overnight_apply.over_reason.value==""){
+            alert("외박사유를 입력해주세요.");
+            overnight_apply.over_reason.focus();
+        }
+        else if(overnight_apply.start_date.value==""){
+            alert("외박기간(시작일)을 입력해주세요.");
+            overnight_apply.start_date.focus();
+        }
+        else if(overnight_apply.end_date.value==""){
+            alert("외박기간(마지막일)을 입력해주세요");
+            overnight_apply.end_date.focus();
+        }
+        else{
+            alert("외박신청이 완료되었습니다.");
+            document.overnight_apply.submit();
+    }}
+    function chk2(){
+        if(leaving_apply.leaving_reason.value==""){
+            alert("퇴거사유를 입력해주세요.");
+            leaving_apply.leaving_reason.focus();
+        }
+        else if(leaving_apply.leaving_date.value==""){
+            alert("퇴거날짜를 입력해주세요.");
+            leaving_apply.leaving_date.focus();
+        }
+        else{
+            /*if(comfirm("정말 퇴거신청하시겠습니까?")==true){*/
+                alert("퇴거신청이 완료되었습니다.");
+                /*locaation.href="main.html";*/
+                /**/
+                document.leaving_apply.submit();
+            }/* else{
+                return;
+            }
+        }*/
+    }
+    </script>
 </body>
 </html>
