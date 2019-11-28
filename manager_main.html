@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>관리자 메인화면</title>
+<style>
+    body{
+        text-align: center;
+    }
+
+    #info{
+        background-color: #F4E9E6;
+        padding: 100px;
+    }
+    
+    #things{
+        background-color: #F4E9E6;
+        padding: 100px;
+    }
+    
+    #points{
+        /*background-color: #F4E9E6;*/
+        padding: 100px;
+    }
+
+    #overnight{
+        background-color: #F4E9E6;
+        padding: 100px;
+    }
+
+    #leaving{
+        /*background-color: #F4E9E6;*/
+        padding: 100px;
+    }
+
+    #bottom{
+        background-color: #F4E9E6;
+        padding: 10px;
+    }
+
+    #Menu{
+        height: 30px;
+
+        margin-top: 30px;
+    }
+    
+    ul{
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    li{
+        list-style: none;
+        display: inline-block;
+        line-height: 30px;
+    }
+
+    .menu{
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        width: 150px;
+    }
+
+    .menu:hover{
+        background-color: #F4E9E6;
+    }
+    </style>
+
+    <script>
+    function mainfomod_popup(){
+        window.open("ma_info_mod.html", "관리자회원정보수정", "width=500, height=400, left=100, top=50");
+    }
+    function search_popup(){
+        window.open("search.html", "입주자조회", "width=800, height=400, left=100, top=50");
+    }
+    function room_popup(){
+        window.open("room.html", "호실관리", "width=800, height=400, left=100, top=50");
+    }
+    function points_popup(){
+        window.open("give_points.html", "상벌점부여", "width=800, height=400, left=100, top=50");
+    }
+    function moveinmng_popup(){
+        window.open("movein_mng.html", "입주신청서관리", "width=800, height=400, left=100, top=50");
+    }
+    function overnightmng_popup(){
+        window.open("overnight_mng.html", "외박신청서관리", "width=800, height=400, left=100, top=50");
+    }
+    function leavingmng_popup(){
+        window.open("leaving_mng.html", "퇴거신청서관리", "width=800, height=400, left=100, top=50");
+    }
+    function chk(){
+        if(confirm("정말 탈퇴하시겠습니까?")==true){
+            /*삭제하기document.submit();*/
+            alert("탈퇴가 완료되었습니다.");
+            location.href='main.html';
+        } else{
+            return;
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <div id="info">
+        <h1>관리자님, 안녕하세요</h1>
+        <a onclick='mainfomod_popup()'>회원정보 수정</a><br/>
+        <a onclick='chk()'>회원탈퇴</a>
+    </div>
+    
+    <nav id="Menu">
+        <ul>
+            <li><a class="menu" onclick='search_popup();'>입주자 조회</a></li>
+            <li><a class="menu" onclick='room_popup();'>호실 관리</a></li>
+            <li><a class="menu" onclick='points_popup();'>상벌점 부여</a></li>
+            <li><a class="menu" onclick='moveinmng_popup();'>입주신청서</a></li>
+            <li><a class="menu" onclick='overnightmng_popup();'>외박신청서</a></li>
+            <li><a class="menu" onclick='leavingmng_popup();'>퇴거신청서</a></li>
+        </ul>
+    </nav>
+
+    <!--<div id="bottom">
+        <a>기숙사 관리 홈페이지</a>
+
+    </div>-->
+</body>
+</html>
